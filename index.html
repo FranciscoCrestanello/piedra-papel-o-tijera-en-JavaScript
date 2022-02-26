@@ -11,9 +11,9 @@
     <div class="containerAll">
         <header class="header">
             <div class="header__div">
-                <p class="header__div-p">0</p>
+                <p class="header__div-p" id="marcadorUsuario">0</p>
                 <h1 class="header__div-h1">Piedra, papel o tijera</h1>
-                <p class="header__div-p">0</p>         
+                <p class="header__div-p"  id="marcadorMaquina">0</p>         
             </div>
         </header>
         <article class="article">
@@ -21,9 +21,9 @@
                 <div class="section__divUsuario">
                     <img src="Imagenes/papel.png" id="imgUsuario" alt="Piedra, papel o tijera" class="section__divUsuario-img">
                     <div class="section__divUsuario-buttons">
-                        <button onclick="mostrarPiedra(), mostrarImgRandom()" class="section__divUsuario-button">Piedra</button>
-                        <button onclick="mostrarPapel(), mostrarImgRandom()" class="section__divUsuario-button">Papel</button>
-                        <button onclick="mostrarTijera(), mostrarImgRandom()" class="section__divUsuario-button">Tijera</button>
+                        <button onclick="mostrarPiedra(), correrLogica()" name="algo" class="section__divUsuario-button">Piedra</button>
+                        <button onclick="mostrarPapel(), correrLogica()" class="section__divUsuario-button">Papel</button>
+                        <button onclick="mostrarTijera(), correrLogica()" class="section__divUsuario-button">Tijera</button>
                     </div>
                 </div>
                 <div class="section__divMaquina">
