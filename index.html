@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Piedra, papel o tijera</title>
 </head>
 <body>
-    
+    <div class="containerAll">
+        <header class="header">
+            <div class="header__div">
+                <p class="header__div-p">0</p>
+                <h1 class="header__div-h1">Piedra, papel o tijera</h1>
+                <p class="header__div-p">0</p>         
+            </div>
+        </header>
+        <article class="article">
+            <section class="section">
+                <div class="section__divUsuario">
+                    <img src="Imagenes/papel.png" id="imgUsuario" alt="Piedra, papel o tijera" class="section__divUsuario-img">
+                    <div class="section__divUsuario-buttons">
+                        <button onclick="mostrarPiedra(), mostrarImgRandom()" class="section__divUsuario-button">Piedra</button>
+                        <button onclick="mostrarPapel(), mostrarImgRandom()" class="section__divUsuario-button">Papel</button>
+                        <button onclick="mostrarTijera(), mostrarImgRandom()" class="section__divUsuario-button">Tijera</button>
+                    </div>
+                </div>
+                <div class="section__divMaquina">
+                    <img src="Imagenes/piedra.png" id="imgMaquina" alt="Piedra, papel o tijera" class="section__divMaquina-img">
+                </div>
+            </section>
+        </article>
+        <script src="app.js"></script>
+    </div>
 </body>
 </html>

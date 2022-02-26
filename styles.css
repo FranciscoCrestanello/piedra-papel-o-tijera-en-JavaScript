@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.containerAll{
+    background: url("Imagenes/fondoPagina.jpg");
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.header__div {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+}
+.header__div-p,.header__div-h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.section {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section__divUsuario {
+    border: 2px solid black;
+    
+}
+.section__divUsuario-buttons {
+    margin-top: 10px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+.section__divUsuario-button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.section__divUsuario-button:hover {
+    background-color: #000;
+    color: #fff;
+    border-bottom: 9px solid #3f7;
+    border-left: 7px solid #3f7;
+    border-radius: 10px;
+    transition: .2s;
+}
+.section__divUsuario-img,.section__divMaquina-img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
