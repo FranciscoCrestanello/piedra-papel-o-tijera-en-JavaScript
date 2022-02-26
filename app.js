@@ -96,5 +96,5 @@ resetearContadores = () => {
 correrLogica = () => {
     mostrarImgRandom();
     agregarPuntaje();
-    setInterval(controlGanador, 500);
+    setInterval(controlGanador, 1000);
 }
